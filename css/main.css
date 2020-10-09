@@ -99,10 +99,22 @@ body {
       flex-basis: 50%;
 }
 
+.navbar__content1 .logos {
+  z-index: 11;
+}
+
+.navbar__content1 .logos.open .logo {
+  font-size: 2rem;
+  color: var(--background-color);
+}
+
 .navbar__content1 .logos .logo {
   font-size: 2rem;
   color: var(--color-sec);
-  z-index: 100;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .navbar__content1 .logos .dark {
@@ -114,7 +126,11 @@ body {
 .navbar__content1 .hamburger {
   cursor: pointer;
   width: 30px;
-  z-index: 1000;
+  z-index: 11;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .navbar__content1 .hamburger.open .menu {
@@ -165,6 +181,10 @@ body {
 
 .navbar__content2 .list {
   text-align: center;
+}
+
+.navbar__content2 .item {
+  margin: 4rem 0;
 }
 
 .navbar__content2 .link {

@@ -6,10 +6,17 @@
     align-items: center;
     flex-basis: 50%;
     .logos {
+      z-index: 11;
+      &.open {
+        .logo {
+          font-size: 2rem;
+          color: var(--background-color);
+        }
+      }
       .logo {
         font-size: 2rem;
         color: var(--color-sec);
-        z-index: 100;
+        @include transition;
       }
       .dark {
         color: var(--color-sec);
@@ -21,7 +28,8 @@
     .hamburger {
       cursor: pointer;
       width: 30px;
-      z-index: 1000;
+      z-index: 11;
+      @include transition;
       &.open {
         .menu {
           background-color: var(--background-color);
@@ -58,6 +66,10 @@
 
     .list {
       text-align: center;
+    }
+
+    .item {
+      margin: 4rem 0;
     }
     .link {
       display: inline-block;
