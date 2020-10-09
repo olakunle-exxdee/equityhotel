@@ -1,0 +1,28 @@
+$sec-color: #455d58;
+$primary-color: #faf2f7;
+$white: #fff;
+
+:root {
+  --background-color: #{$primary-color};
+  --color-text: #{$white};
+  --color-sec: #{$sec-color};
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin transition {
+  transition: transform 400ms ease;
+}
