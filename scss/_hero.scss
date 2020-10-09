@@ -1,0 +1,16 @@
+.hero {
+  background: linear-gradient(to right bottom, #00412bcc, #455d5880),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 7.5rem);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 4rem;
+    color: var(--color-text);
+  }
+}

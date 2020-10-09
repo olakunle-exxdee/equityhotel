@@ -26,3 +26,26 @@ body {
 @mixin transition {
   transition: transform 400ms ease;
 }
+
+%btn {
+  display: inline-block;
+  background: transparent;
+  border: 0.1rem solid var(--white-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 400ms ease;
+}
+
+.btn-green {
+  @extend %btn;
+  background-color: var(--color-sec);
+}

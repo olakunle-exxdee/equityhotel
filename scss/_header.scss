@@ -6,6 +6,7 @@
     align-items: center;
     flex-basis: 50%;
     .logos {
+      margin: 2rem 0;
       z-index: 11;
       &.open {
         .logo {
@@ -86,8 +87,8 @@
         content: "";
         background: var(--background-color);
         width: 100%;
-        height: 2px;
-        bottom: 0px;
+        height: 5px;
+        bottom: 16px;
         left: 0;
         transform: scaleX(0);
         transform-origin: right;

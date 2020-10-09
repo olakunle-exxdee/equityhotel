@@ -85,6 +85,31 @@ body {
           align-items: center;
 }
 
+.btn-green {
+  display: inline-block;
+  background: transparent;
+  border: 0.1rem solid var(--white-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.btn-green {
+  background-color: var(--color-sec);
+}
+
 .navbar__content1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,6 +125,7 @@ body {
 }
 
 .navbar__content1 .logos {
+  margin: 2rem 0;
   z-index: 11;
 }
 
@@ -204,8 +230,8 @@ body {
   content: "";
   background: var(--background-color);
   width: 100%;
-  height: 2px;
-  bottom: 0px;
+  height: 5px;
+  bottom: 16px;
   left: 0;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -218,5 +244,29 @@ body {
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right bottom, from(#00412bcc), to(#455d5880)), url(../images/hero-bg.jpg);
+  background: linear-gradient(to right bottom, #00412bcc, #455d5880), url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 7.5rem);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__heading {
+  font-size: 4rem;
+  color: var(--color-text);
 }
 /*# sourceMappingURL=main.css.map */
