@@ -1,0 +1,186 @@
+
+
+    <!-- RESTAURANT SECTION -->
+    <section class="restaurant">
+      <div class="container">
+        <div class="row column-reverse">
+          <div class="col-2 padding-right">
+            <div class="text-box">
+              <h2>Restaurant</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto enim mollitia dolorum necessitatibus vero sunt
+                deleniti minus vel, non quasi?
+              </p>
+              <button class="btn">Dine With Us</button>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="images/restaurant.jpg" alt="image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RESTAURANT SECTION ENDS -->
+
+    <!-- SPA SECTION -->
+    <section class="spa">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 padding-right">
+            <img src="images/spa.jpg" alt="image" />
+          </div>
+          <div class="col-2">
+            <div class="text-box">
+              <h2>Spa &amp; Wellness</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto enim mollitia dolorum necessitatibus vero sunt
+                deleniti minus vel, non quasi?
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SPA SECTION ENDS -->
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="heading-text">Customers Reviews</h2>
+        <div class="slider">
+          <div class="slider-box">
+            <i class="fas fa-quote-left text-green"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <img src="images/user-1.jpg" alt="user" />
+            <h3>Chris Doe</h3>
+          </div>
+          <div class="slider-box">
+            <i class="fas fa-quote-left text-green"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <img src="images/user-2.jpg" alt="user" />
+            <h3>John Doe</h3>
+          </div>
+          <div class="slider-box">
+            <i class="fas fa-quote-left text-green"></i>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <img src="images/user-3.jpg" alt="user" />
+            <h3>Jane Doe</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL SECTION ENDS  -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#header"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer__content row">
+          <div class="col-3">
+            <h4>About</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              unde accusantium sit repudiandae incidunt quod eius recusandae
+              blanditiis voluptates consectetur?
+            </p>
+          </div>
+          <div class="col-3">
+            <h4>Payment Methods</h4>
+            <p>Pay any way you choose, we support all payment options</p>
+            <ul class="payment-methods">
+              <li>
+                <a href="#">
+                  <i class="fab fa-paypal"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-cc-visa"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-cc-mastercard"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-apple-pay"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>Get Social</h4>
+            <p>Follow us on social media and keep in touch with La Hotel.</p>
+            <ul class="social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-tripadvisor"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Inpired and Designed
+            <a href="https://github.com/abdulsamadayoade">AbdulSamad Ayoade</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS  -->
