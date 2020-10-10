@@ -2,6 +2,10 @@ $sec-color: #455d58;
 $primary-color: #faf2f7;
 $white: #fff;
 
+$dark-sec-color: #011e92;
+$dark-primary-color: #000000;
+$dark-white: #fff;
+
 :root {
   --background-color: #{$primary-color};
   --color-text: #{$white};
@@ -126,20 +130,9 @@ body {
     transform-origin: bottom;
   }
 }
-.flex-child {
-  position: relative;
-  i {
-    font-size: 3rem;
-    position: absolute;
-    color: var(--color-text);
-    cursor: pointer;
-  }
-  .fa-chevron-left {
-    left: 0;
-    top: 50%;
-  }
-  .fa-chevron-right {
-    right: 0;
-    top: 50%;
+
+@mixin responsive {
+  @media only screen and (min-width: 56em) {
+    @content;
   }
 }

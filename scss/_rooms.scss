@@ -2,5 +2,22 @@
   background: var(--color-sec);
   .flex {
     flex-direction: column;
+    .flex-child {
+      position: relative;
+      i {
+        font-size: 3rem;
+        position: absolute;
+        color: var(--color-text);
+        cursor: pointer;
+      }
+      .fa-chevron-left {
+        left: 0;
+        top: 50%;
+      }
+      .fa-chevron-right {
+        right: 0;
+        top: 50%;
+      }
+    }
   }
 }

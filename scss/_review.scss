@@ -1,0 +1,21 @@
+.testimonials {
+  text-align: center;
+  img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 1rem auto;
+  }
+
+  .review {
+    .button-container {
+      button {
+        outline: none;
+        font-size: 2rem;
+        color: var(--sec-color);
+        border: none;
+        cursor: pointer;
+        transition: all 240ms ease;
+      }
+    }
+  }
+}
