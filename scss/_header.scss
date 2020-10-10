@@ -92,7 +92,7 @@
         height: 2px;
         bottom: 0px;
         left: 0;
-        transform: scaleX(-0.001);
+        transform: scaleX(0);
         transform-origin: right;
       }
       &:hover::before {

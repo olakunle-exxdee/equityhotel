@@ -191,6 +191,10 @@ body {
 
 .btn-green:hover {
   color: var(--color-text);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .btn-green::after {
@@ -345,8 +349,8 @@ body {
   height: 2px;
   bottom: 0px;
   left: 0;
-  -webkit-transform: scaleX(-0.001);
-          transform: scaleX(-0.001);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
 }
@@ -356,6 +360,81 @@ body {
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.menu {
+  color: var(--color-sec);
+}
+
+.menu .btn-container {
+  margin-bottom: 2rem;
+}
+
+.menu .btn-container .filter-btn {
+  margin-top: 1rem;
+  color: var(--color-sec);
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: 2px var(--color-sec) solid;
+  padding: 0.25rem 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-left: 1rem;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.menu .btn-container .filter-btn:hover {
+  color: var(--background-color);
+  background: var(--color-sec);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.menu .section-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .section-center img {
+  border: 3px var(--color-sec) solid;
+  height: 200px;
+}
+
+.menu .section-center .menu-item {
+  max-width: 350px;
+  margin-bottom: 2rem;
+}
+
+.menu .section-center .menu-item .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.menu .section-center .menu-item .btn-green {
+  padding: 1rem;
 }
 
 .hero {

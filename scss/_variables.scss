@@ -110,6 +110,7 @@ body {
   color: var(--color-sec);
   &:hover {
     color: var(--color-text);
+    @include transition;
   }
   &::after {
     position: absolute;
