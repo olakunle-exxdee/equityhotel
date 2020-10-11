@@ -4,3 +4,13 @@
     flex-direction: column;
   }
 }
+
+.title1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--background-color);
+
+  .fa-spa {
+    font-size: 4rem;
+  }
+}
