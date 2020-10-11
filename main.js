@@ -124,6 +124,163 @@ const menu1 = [
     img: "./images/menu-gallery-2.jpg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 10,
+    title: "jollof rice",
+    category: "dinner",
+    price: 36.99,
+    img: "./images/menu-gallery-1.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 10,
+    title: "fried rice",
+    category: "dinner",
+    price: 36.99,
+    img: "./images/menu-gallery-3.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+];
+const room1 = [
+  {
+    id: 1,
+    title: "single ",
+    category: "single",
+    price: 200.99,
+    img: "./images/room-1.jpg",
+    desc: `A room assigned to one person. May have one or more beds.The room size or area of Single Rooms are generally between 37 m² to 45 m².`,
+  },
+  {
+    id: 1,
+    title: "single ",
+    category: "single",
+    price: 200.99,
+    img: "./images/room-2.jpg",
+    desc: `A room assigned to one person. May have one or more beds.The room size or area of Single Rooms are generally between 37 m² to 45 m².`,
+  },
+  {
+    id: 1,
+    title: "single ",
+    category: "single",
+    price: 200.99,
+    img: "./images/room-3.jpg",
+    desc: `A room assigned to one person. May have one or more beds.The room size or area of Single Rooms are generally between 37 m² to 45 m².`,
+  },
+  {
+    id: 2,
+    title: "double room",
+    category: "double",
+    price: 155.99,
+    img: "./images/room-4.jpg",
+    desc: `A room assigned to two people. May have one or more beds.
+The room size or area of Double Rooms are generally between 40 m² to 45 m².`,
+  },
+  {
+    id: 2,
+    title: "double room",
+    category: "double",
+    price: 155.99,
+    img: "./images/room-5.jpg",
+    desc: `A room assigned to two people. May have one or more beds.
+The room size or area of Double Rooms are generally between 40 m² to 45 m².`,
+  },
+
+  {
+    id: 2,
+    title: "double room",
+    category: "double",
+    price: 155.99,
+    img: "./images/room-2.jpg",
+    desc: `A room assigned to two people. May have one or more beds.
+The room size or area of Double Rooms are generally between 40 m² to 45 m².`,
+  },
+
+  {
+    id: 4,
+    title: "standard room",
+    category: "standard",
+    price: 200.99,
+    img: "./images/room-3.jpg",
+    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+  },
+  {
+    id: 5,
+    title: "standard room",
+    category: "standard",
+    price: 22.99,
+    img: "./images/room-4.jpg",
+    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+  },
+  {
+    id: 6,
+    title: "deluxe room",
+    category: "deluxe",
+    price: 1000.99,
+    img: "./images/room-5.jpg",
+    desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
+  },
+  {
+    id: 7,
+    title: "bdeluxe room",
+    category: "deluxe",
+    price: 1000.99,
+    img: "./images/room-6.jpg",
+    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
+  },
+  {
+    id: 8,
+    title: "queen room",
+    category: "queen",
+    price: 1200.99,
+    img: "./images/room-6.jpg",
+    desc: `A room with a queen-sized bed. May be occupied by one or more people.
+The room size or area of Queen Rooms are generally between 32 m² to 50 m².`,
+  },
+  {
+    id: 8,
+    title: "queen room",
+    category: "queen",
+    price: 1200.99,
+    img: "./images/room-5.jpg",
+    desc: `A room with a queen-sized bed. May be occupied by one or more people.
+The room size or area of Queen Rooms are generally between 32 m² to 50 m².  `,
+  },
+  {
+    id: 8,
+    title: "queen room",
+    category: "queen",
+    price: 1200.99,
+    img: "./images/room-4.jpg",
+    desc: `A room with a queen-sized bed. May be occupied by one or more people.
+The room size or area of Queen Rooms are generally between 32 m² to 50 m².`,
+  },
+  {
+    id: 9,
+    title: "quad room",
+    category: "quad",
+    price: 16.99,
+    img: "./images/room-1.jpg",
+    desc: `A room assigned to four people. May have two or more beds.
+The room size or area of Quad Rooms are generally between 70 m² to 85 m².`,
+  },
+  {
+    id: 9,
+    title: "quad room",
+    category: "quad",
+    price: 16.99,
+    img: "./images/room-2.jpg",
+    desc: `A room assigned to four people. May have two or more beds.
+The room size or area of Quad Rooms are generally between 70 m² to 85 m².`,
+  },
+  {
+    id: 9,
+    title: "quad room",
+    category: "quad",
+    price: 16.99,
+    img: "./images/room-3.jpg",
+    desc: `A room assigned to four people. May have two or more beds.
+The room size or area of Quad Rooms are generally between 70 m² to 85 m².`,
+  },
 ];
 
 // select items
@@ -143,6 +300,8 @@ const nextBtn = document.querySelector(".nextbtn");
 const roomImg = document.getElementById("roomimg");
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
+const sectionCenterRoom = document.querySelector(".section-center-room");
+const btnContainerRoom = document.querySelector(".btn-container-room");
 
 let showMenu = false;
 
@@ -178,8 +337,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   displayMenuItems(menu1);
+  randomBtn(menu1);
+});
 
-  const categories = menu1.reduce(
+window.addEventListener("DOMContentLoaded", () => {
+  displayRoomItems(room1);
+  randomBtnRoom(room1);
+});
+
+function randomBtn(btnMenu) {
+  const categories = btnMenu.reduce(
     (values, categoryItem) => {
       if (!values.includes(categoryItem.category)) {
         values.push(categoryItem.category);
@@ -210,7 +377,62 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-});
+}
+
+function randomBtnRoom(btnMenu) {
+  const categories = btnMenu.reduce(
+    (values, categoryItem) => {
+      if (!values.includes(categoryItem.category)) {
+        values.push(categoryItem.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  let categoriesBtn = categories.map((category) => {
+    return `<button type="button" class="filter-btn" data-id=${category}>${category}</button>`;
+  });
+
+  categoriesBtn = categoriesBtn.join("");
+  btnContainerRoom.innerHTML = categoriesBtn;
+  const filterBtnsRoom = document.querySelectorAll(".filter-btn");
+  filterBtnsRoom.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = room1.filter((menuItem) => {
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      if (category == "all") {
+        displayRoomItems(room1);
+      } else {
+        displayRoomItems(menuCategory);
+      }
+    });
+  });
+}
+
+function displayRoomItems(roomItem) {
+  let displayRoom = roomItem
+    .map((item) => {
+      return ` <article class="menu-item">
+                <img src="${item.img}" alt="${item.title} class="photo" />
+                <div class="item-info">
+                    <div class="header">
+                        <h4>${item.title}</h4>
+                        <h4 class="price">$${item.price}</h4>
+                    </div>
+                    <p class="item-text">
+                        ${item.desc}
+                    </p>
+                </div>
+                 <button class="btn-green">order</button>
+            </article>`;
+    })
+    .join("");
+  sectionCenterRoom.innerHTML = displayRoom;
+}
 
 function displayMenuItems(menuItem) {
   let displayMenu = menuItem.map(function (itemM) {

@@ -437,6 +437,81 @@ body {
   padding: 1rem;
 }
 
+.room {
+  color: var(--color-sec);
+}
+
+.room .btn-container-room {
+  margin-bottom: 2rem;
+}
+
+.room .btn-container-room .filter-btn {
+  margin-top: 1rem;
+  color: var(--color-sec);
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: 2px var(--color-sec) solid;
+  padding: 0.25rem 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-left: 1rem;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.room .btn-container-room .filter-btn:hover {
+  color: var(--background-color);
+  background: var(--color-sec);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.room .section-center-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room .section-center-room img {
+  border: 3px var(--color-sec) solid;
+  height: 200px;
+}
+
+.room .section-center-room .menu-item {
+  max-width: 350px;
+  margin-bottom: 2rem;
+}
+
+.room .section-center-room .menu-item .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.room .section-center-room .menu-item .btn-green {
+  padding: 1rem;
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, right bottom, from(#455d58), to(#00221b80)), url(../images/hero-bg.jpg);
   background: linear-gradient(to right bottom, #455d58, #00221b80), url(../images/hero-bg.jpg);
@@ -584,6 +659,11 @@ footer .flex-child1 .social-icons {
 footer .flex-child1 .payment-methods li,
 footer .flex-child1 .social-icons li {
   font-size: 2.5rem;
+}
+
+footer .flex-child1 .payment-methods li:hover,
+footer .flex-child1 .social-icons li:hover {
+  opacity: 0.6;
 }
 
 footer .flex-child1 .payment-methods li + li,
