@@ -427,7 +427,7 @@ function displayRoomItems(roomItem) {
                         ${item.desc}
                     </p>
                 </div>
-                 <button class="btn-green">order</button>
+                 <button class="btn-green">book</button>
             </article>`;
     })
     .join("");
@@ -447,7 +447,7 @@ function displayMenuItems(menuItem) {
                         ${itemM.desc}
                     </p>
                 </div>
-                 <button class="btn-green">order</button>
+                 <button class="btn-green">book</button>
             </article>`;
   });
 
