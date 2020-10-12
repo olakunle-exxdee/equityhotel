@@ -337,8 +337,12 @@ body {
   color: var(--background-color);
   text-transform: uppercase;
   font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
   padding: 1rem 2rem;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .navbar__content2 .link::before {
@@ -347,19 +351,35 @@ body {
   background: var(--background-color);
   width: 100%;
   height: 2px;
-  bottom: 0px;
   left: 0;
+  bottom: 0;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .navbar__content2 .link:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.navbar__content2 .link:hover {
+  opacity: 0.7;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .menu {
@@ -623,6 +643,29 @@ body {
   transition: all 240ms ease;
 }
 
+.services {
+  background: var(--color-sec);
+  color: var(--color-text);
+}
+
+.services .fas {
+  color: #ff8a5f;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.services .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services .flex .flex-child1 {
+  margin-bottom: 2rem;
+  max-width: 60rem;
+}
+
 footer {
   background: var(--color-sec);
   position: relative;
@@ -743,6 +786,7 @@ footer .flex-child1 .social-icons li + li {
   }
   .navbar__content2 .reserve::before {
     background: var(--background-color);
+    display: none;
   }
   .info .flex {
     -webkit-box-orient: horizontal;
@@ -769,6 +813,15 @@ footer .flex-child1 .social-icons li + li {
   .restaurant .flex .flex-child {
     margin: 0;
     margin-left: 5rem;
+  }
+  .services .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services .flex .flex-child1 {
+    padding-right: 4rem;
   }
   .spa .flex {
     -webkit-box-orient: horizontal;

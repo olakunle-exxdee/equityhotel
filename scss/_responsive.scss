@@ -40,6 +40,7 @@
         background: var(--color-sec);
         color: var(--background-color);
         border: 2px var(--color-sec) solid;
+
         @include transition;
         &:hover {
           color: var(--color-sec);
@@ -47,6 +48,7 @@
         }
         &::before {
           background: var(--background-color);
+          display: none;
         }
       }
     }
@@ -74,6 +76,15 @@
       .flex-child {
         margin: 0;
         margin-left: 5rem;
+      }
+    }
+  }
+
+  .services {
+    .flex {
+      flex-direction: row;
+      .flex-child1 {
+        padding-right: 4rem;
       }
     }
   }
