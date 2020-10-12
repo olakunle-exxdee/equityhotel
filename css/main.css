@@ -666,6 +666,26 @@ body {
   max-width: 60rem;
 }
 
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  outline: none;
+  padding: 1.7rem 1.5rem;
+  font-family: var(--main-font-2);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact textarea {
+  resize: none;
+  height: 20rem;
+}
+
 footer {
   background: var(--color-sec);
   position: relative;
